@@ -1,6 +1,5 @@
 package com.jese.GameDev.Models;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.Basic;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -30,12 +29,10 @@ public class Tarea {
     private EstadoTarea estado;
 
     @ManyToOne
-    @JsonIgnore
     @JoinColumn(name = "desarrollador_id")
     private Desarrollador desarrollador;
 
     @ManyToOne
-    @JsonIgnore
     @JoinColumn(name = "juego_id")
     private Juego juego;
 

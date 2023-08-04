@@ -26,10 +26,14 @@ public class Desarrollador {
     @Basic
     private String nombre;
     private String correo;
-    private RolDesarrollador rol; 
-    
+    private RolDesarrollador rol;
+
     @ManyToOne
     @JsonIgnore
     @JoinColumn(name = "juego_id")
     private Juego juego;
+    
+    public Desarrollador(int id) {
+        this.id = id;
+    }
 }

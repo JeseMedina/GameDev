@@ -34,4 +34,8 @@ public class Juego {
     @OneToMany(mappedBy = "juego")
     @JsonIgnore
     private List<Tarea> tareas;
+    
+    public Juego(int id) {
+        this.id = id;
+    }
 }

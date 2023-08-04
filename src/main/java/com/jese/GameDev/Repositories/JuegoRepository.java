@@ -8,7 +8,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface JuegoRepository extends JpaRepository<Juego, Integer>{
-    
     public boolean existsByTitulo(String titulo);
     public List<Juego> findByFechaLanzamientoBefore(LocalDate fechaActual);
 }
