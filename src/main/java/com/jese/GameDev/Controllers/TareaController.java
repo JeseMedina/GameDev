@@ -1,7 +1,7 @@
 package com.jese.GameDev.Controllers;
 
 import com.jese.GameDev.Models.EstadoTarea;
-import com.jese.GameDev.Services.TareaService;
+import com.jese.GameDev.Services.Impl.TareaServiceImpl;
 import com.jese.GameDev.Models.Tarea;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class TareaController {
     
     @Autowired
-    TareaService tareaService;
+    TareaServiceImpl tareaService;
     
     @PostMapping
     @ResponseBody

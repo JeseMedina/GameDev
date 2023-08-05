@@ -1,6 +1,6 @@
 package com.jese.GameDev.Controllers;
 
-import com.jese.GameDev.Services.DesarrolladorService;
+import com.jese.GameDev.Services.Impl.DesarrolladorServiceImpl;
 import com.jese.GameDev.Models.Desarrollador;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class DesarrolladorController {
 
     @Autowired
-    DesarrolladorService desarrolladorService;
+    DesarrolladorServiceImpl desarrolladorService;
 
     @PostMapping
     @ResponseBody

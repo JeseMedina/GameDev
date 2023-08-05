@@ -1,6 +1,6 @@
 package com.jese.GameDev.Controllers;
 
-import com.jese.GameDev.Services.JuegoService;
+import com.jese.GameDev.Services.Impl.JuegoServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -15,10 +15,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/juegos")
 public class JuegoController {
 
-    private final JuegoService juegoService;
+    private final JuegoServiceImpl juegoService;
 
     @Autowired
-    public JuegoController(JuegoService juegoService) {
+    public JuegoController(JuegoServiceImpl juegoService) {
         this.juegoService = juegoService;
     }
 
